@@ -1,0 +1,63 @@
+<style>
+.a-tag{color:var(--gold-deep);margin-bottom:14px}
+.about p b{color:var(--navy);font-weight:700}
+.about .facts{margin-top:0}
+.a-side{padding-top:8px}
+
+/* mobile-only alignment (logo stage + About) */
+@media (max-width:640px){
+  .stage{display:flex;flex-direction:column;align-items:center;min-height:0;padding:32px 16px 0;gap:14px}
+  .stage .rings{opacity:.25}
+  .stage .big{position:relative;left:auto;top:auto;transform:none;width:min(60vw,230px);height:min(60vw,230px);flex:none;margin-bottom:10px}
+  .stage .chip,.stage .chip.c1,.stage .chip.c2,.stage .chip.c3{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;width:100%;max-width:340px;padding:10px 14px;gap:12px}
+  .stage .chip span{max-width:none}
+  .stage-foot{position:relative;width:calc(100% + 32px);margin:10px -16px 0;padding:14px 16px;background:var(--card);border-top:1px solid var(--line)}
+  .stage-foot #cap{text-align:right;font-size:.62rem}
+  #about{padding-top:40px!important}
+  .about{gap:36px}
+  .about p{font-size:1rem;line-height:1.8}
+  .facts div{flex-direction:column;gap:2px;padding:14px 0}
+  .facts dd{text-align:left;overflow-wrap:anywhere}
+  .a-pillars li{grid-template-columns:32px 1fr}
+  .a-pillars h3{font-size:1.15rem}
+}
+</style>
+
+<section id="about" style="padding-top:clamp(32px,5vw,56px)">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="mono a-tag">Who we are</div>
+        <h2>About us</h2>
+        <p class="a-lead">Manblue Industries is an integrated mechanical, electrical and plumbing (MEP) engineering company based in Krishnagiri district, Tamil Nadu. Under the leadership of Managing Director R T Raj Varshan, B.E, we were built on one conviction: industrial facilities perform best when a single, accountable team looks after the systems that keep them running.</p>
+        <p><b>Our origin.</b> Our roots are in the industrial community of Krishnagiri, and our work grew from the practical needs of the plants around us: dependable installation, responsive repair and skilled fabrication, available from one team. Being local means we understand the sites we serve, and we are close enough to respond when it matters.</p>
+      </div>
+      <div class="a-side">
+        <dl class="facts">
+          <div><dt>Managing Director</dt><dd>R T Raj Varshan, B.E</dd></div>
+          <div><dt>Headquarters</dt><dd>Krishnagiri, Tamil Nadu</dd></div>
+          <div><dt>Disciplines</dt><dd>Mechanical, Electrical, Plumbing</dd></div>
+          <div><dt>Clients</dt><dd>Industrial, Commercial, Residential</dd></div>
+          <div><dt>GST number</dt><dd>33EHQPR6059M1ZF</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="what-we-do" style="padding-top:clamp(40px,6vw,64px)">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="mono a-tag">Our work</div>
+        <h2>What we do</h2>
+        <p class="a-lead">We install, commission, manufacture and maintain the critical systems of industrial, commercial and residential spaces, from machinery and overhead cranes to electrical networks, control panels and plumbing, delivered to your drawings and tested before handover.</p>
+      </div>
+      <ul class="a-pillars">
+        <li><span class="mono">01</span><div><h3>Service</h3><p>Installation and commissioning of machinery, cranes, electrical and plumbing systems, delivered on time and tested before handover.</p></div></li>
+        <li><span class="mono">02</span><div><h3>Manufacturing</h3><p>Cranes, structural steel, roofing sheds and custom frames manufactured, fabricated and welded to your drawings.</p></div></li>
+        <li><span class="mono">03</span><div><h3>Maintenance</h3><p>Planned and responsive upkeep, from motors and hydraulics to panels and piping, that limits downtime and keeps your plant running.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
