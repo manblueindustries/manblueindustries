@@ -1,0 +1,22 @@
+.a-tag{color:var(--gold-deep);margin-bottom:14px}
+.about p b{color:var(--navy);font-weight:700}
+.about .facts{margin-top:0}
+.a-side{padding-top:8px}
+
+/* mobile-only alignment (logo stage + About) */
+@media (max-width:640px){
+  .stage{display:flex;flex-direction:column;align-items:center;min-height:0;padding:32px 16px 0;gap:14px}
+  .stage .rings{opacity:.25}
+  .stage .big{position:relative;left:auto;top:auto;transform:none;width:min(60vw,230px);height:min(60vw,230px);flex:none;margin-bottom:10px}
+  .stage .chip,.stage .chip.c1,.stage .chip.c2,.stage .chip.c3{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;width:100%;max-width:340px;padding:10px 14px;gap:12px}
+  .stage .chip span{max-width:none}
+  .stage-foot{position:relative;width:calc(100% + 32px);margin:10px -16px 0;padding:14px 16px;background:var(--card);border-top:1px solid var(--line)}
+  .stage-foot #cap{text-align:right;font-size:.62rem}
+  #about{padding-top:40px!important}
+  .about{gap:36px}
+  .about p{font-size:1rem;line-height:1.8}
+  .facts div{flex-direction:column;gap:2px;padding:14px 0}
+  .facts dd{text-align:left;overflow-wrap:anywhere}
+  .a-pillars li{grid-template-columns:32px 1fr}
+  .a-pillars h3{font-size:1.15rem}
+}
