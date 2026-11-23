@@ -1,63 +1,343 @@
-<style>
-.a-tag{color:var(--gold-deep);margin-bottom:14px}
-.about p b{color:var(--navy);font-weight:700}
-.about .facts{margin-top:0}
-.a-side{padding-top:8px}
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="stylesheet" href="style.css"></head><body>
+<title>Manblue Industries</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap">
 
-/* mobile-only alignment (logo stage + About) */
-@media (max-width:640px){
-  .stage{display:flex;flex-direction:column;align-items:center;min-height:0;padding:32px 16px 0;gap:14px}
-  .stage .rings{opacity:.25}
-  .stage .big{position:relative;left:auto;top:auto;transform:none;width:min(60vw,230px);height:min(60vw,230px);flex:none;margin-bottom:10px}
-  .stage .chip,.stage .chip.c1,.stage .chip.c2,.stage .chip.c3{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;width:100%;max-width:340px;padding:10px 14px;gap:12px}
-  .stage .chip span{max-width:none}
-  .stage-foot{position:relative;width:calc(100% + 32px);margin:10px -16px 0;padding:14px 16px;background:var(--card);border-top:1px solid var(--line)}
-  .stage-foot #cap{text-align:right;font-size:.62rem}
-  #about{padding-top:40px!important}
-  .about{gap:36px}
-  .about p{font-size:1rem;line-height:1.8}
-  .facts div{flex-direction:column;gap:2px;padding:14px 0}
-  .facts dd{text-align:left;overflow-wrap:anywhere}
-  .a-pillars li{grid-template-columns:32px 1fr}
-  .a-pillars h3{font-size:1.15rem}
-}
-</style>
 
-<section id="about" style="padding-top:clamp(32px,5vw,56px)">
+<div class="topbar">
   <div class="wrap">
-    <div class="about">
-      <div>
-        <div class="mono a-tag">Who we are</div>
-        <h2>About us</h2>
-        <p class="a-lead">Manblue Industries is an integrated mechanical, electrical and plumbing (MEP) engineering company based in Krishnagiri district, Tamil Nadu. Under the leadership of Managing Director R T Raj Varshan, B.E, we were built on one conviction: industrial facilities perform best when a single, accountable team looks after the systems that keep them running.</p>
-        <p><b>Our origin.</b> Our roots are in the industrial community of Krishnagiri, and our work grew from the practical needs of the plants around us: dependable installation, responsive repair and skilled fabrication, available from one team. Being local means we understand the sites we serve, and we are close enough to respond when it matters.</p>
-      </div>
-      <div class="a-side">
-        <dl class="facts">
-          <div><dt>Managing Director</dt><dd>R T Raj Varshan, B.E</dd></div>
-          <div><dt>Headquarters</dt><dd>Krishnagiri, Tamil Nadu</dd></div>
-          <div><dt>Disciplines</dt><dd>Mechanical, Electrical, Plumbing</dd></div>
-          <div><dt>Clients</dt><dd>Industrial, Commercial, Residential</dd></div>
-          <div><dt>GST number</dt><dd>33EHQPR6059M1ZF</dd></div>
-        </dl>
+    <span class="mono">Build for what’s next</span>
+    <a class="mono" href="mailto:manblueindustries@gmail.com">manblueindustries@gmail.com ↗️</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Manblue Industries home">
+      <img class="mark" src="images/img01.png" alt="" width="56" height="56">
+      <img class="word" src="images/img02.png" alt="Manblue Industries" width="189" height="38">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#top">Home</a>
+      <a class="link" href="#about">About Us</a>
+      <a class="link" href="#capabilities">Services</a>
+      <a class="link" href="#portfolio">Portfolio</a>
+      <a class="link" href="#careers">Careers</a>
+      <a class="link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>
+      <a href="#capabilities" data-go="mech">Mechanical<sup>(M)</sup></a>
+      <a href="#capabilities" data-go="elec">Electrical<sup>(E)</sup></a>
+      <a href="#capabilities" data-go="plum">Plumbing<sup>(P)</sup></a>
+    </h1>
+    <p class="lede">Manblue Industries delivers dependable mechanical, electrical and plumbing solutions for industrial spaces across every stage of their lifecycle.</p>
+    <div class="cta">
+      <a class="btn-blue" href="#capabilities">Explore capabilities <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="btn-text" href="#contact"><svg class="i" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Talk to our team</a>
+    </div>
+
+    <div class="points" role="list">
+      <div role="listitem"><span class="mono">01</span> Single-point accountability</div>
+      <div role="listitem"><span class="mono">02</span> Built for industrial uptime</div>
+      <div role="listitem"><span class="mono">03</span> Detail-led execution</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stage" aria-label="Manblue Industries integrated engineering">
+      <svg class="rings" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path class="sp" d="M778.0,312.0 L777.8,312.8 L777.6,313.6 L777.5,314.5 L777.4,315.4 L777.4,316.3 L777.5,317.2 L777.6,318.1 L777.8,319.0 L778.0,320.0 L778.4,320.9 L778.8,321.9 L779.2,322.8 L779.7,323.7 L780.3,324.6 L781.0,325.5 L781.7,326.3 L782.5,327.1 L783.4,327.9 L784.4,328.6 L785.4,329.3 L786.4,329.9 L787.6,330.5 L788.8,331.0 L790.0,331.4 L791.3,331.8 L792.6,332.0 L794.0,332.2 L795.4,332.3 L796.9,332.3 L798.4,332.2 L799.9,332.0 L801.4,331.7 L802.9,331.3 L804.4,330.8 L806.0,330.2 L807.5,329.5 L808.9,328.6 L810.4,327.7 L811.8,326.6 L813.2,325.4 L814.5,324.1 L815.7,322.7 L816.9,321.1 L818.0,319.5 L819.0,317.8 L819.9,315.9 L820.7,314.0 L821.4,312.0 L822.0,309.9 L822.4,307.7 L822.7,305.5 L822.9,303.2 L822.9,300.8 L822.7,298.4 L822.4,296.0 L821.9,293.6 L821.3,291.1 L820.5,288.6 L819.4,286.2 L818.3,283.7 L816.9,281.3 L815.3,279.0 L813.6,276.7 L811.6,274.5 L809.5,272.4 L807.2,270.4 L804.8,268.5 L802.1,266.7 L799.3,265.1 L796.4,263.6 L793.3,262.3 L790.0,261.2 L786.6,260.2 L783.1,259.5 L779.5,259.1 L775.7,258.8 L771.9,258.8 L768.1,259.0 L764.1,259.5 L760.2,260.3 L756.2,261.4 L752.2,262.7 L748.2,264.4 L744.3,266.3 L740.4,268.5 L736.6,271.0 L732.9,273.8 L729.3,277.0 L725.9,280.4 L722.6,284.1 L719.5,288.1 L716.7,292.4 L714.0,296.9 L711.7,301.7 L709.6,306.7 L707.8,312.0 L706.3,317.5 L705.1,323.2 L704.3,329.0 L703.9,335.1 L703.9,341.2 L704.3,347.5 L705.1,353.9 L706.4,360.3 L708.1,366.7 L710.3,373.2 L712.9,379.6 L716.0,386.0 L719.6,392.3 L723.7,398.4 L728.3,404.4 L733.3,410.2 L738.8,415.7 L744.8,421.0 L751.3,426.0 L758.2,430.6 L765.6,434.9 L773.3,438.8 L781.5,442.2 L790.0,445.1 L798.9,447.5 L808.1,449.3 L817.6,450.6 L827.3,451.3 L837.3,451.3 L847.4,450.7 L857.7,449.3 L868.1,447.3 L878.6,444.5 L889.0,441.0 L899.4,436.7 L909.7,431.7 L919.9,425.9 L929.8,419.3 L939.5,411.9 L948.8,403.7 L957.8,394.8 L966.4,385.1 L974.5,374.6 L982.0,363.4 L988.9,351.6 L995.1,339.0 L1000.6,325.8 L1005.3,312.0 L1009.2,297.6 L1012.2,282.7 L1014.3,267.4 L1015.4,251.6 L1015.4,235.5 L1014.4,219.1 L1012.2,202.4 L1008.9,185.6 L1004.4,168.7 L998.8,151.8 L991.8,135.0 L983.7,118.3 L974.3,101.9 L963.6,85.8 L951.6,70.1 L938.4,55.0 L923.9,40.4 L908.2,26.6 L891.3,13.5 L873.2,1.4 L854.0,-9.8 L833.7,-19.9 L812.3,-28.8 L790.0,-36.4 L766.8,-42.7 L742.7,-47.6 L717.8,-50.9 L692.3,-52.6 L666.2,-52.7 L639.6,-51.0 L612.7,-47.6 L585.5,-42.2 L558.2,-35.0 L530.8,-25.8 L503.6,-14.6 L476.6,-1.4 L450.0,13.9 L424.0,31.2 L398.7,50.5 L374.1,71.9 L350.6,95.3 L328.2,120.7 L307.1,148.1 L287.4,177.3 L269.4,208.4 L253.0,241.3 L238.6,275.9 L226.3,312.0 L216.1,349.6 L208.2,388.6 L202.8,428.8 L200.0,470.1 L199.9,512.3 L202.6,555.3 L208.2,598.9 L216.8,642.9 L228.6,687.1 L243.5,731.4 L261.6,775.4 L282.9,819.1 L307.6,862.1 L335.6,904.2 L366.9,945.2 L401.5,984.9 L439.4,1023.0 L480.5,1059.2 L524.8,1093.4 L572.1,1125.2 L622.4,1154.4 L675.6,1180.8 L731.5,1204.1 L790.0,1224.2"/>
+        <path class="sp2" d="M778.0,312.0 L777.8,312.8 L777.6,313.6 L777.5,314.5 L777.4,315.4 L777.4,316.3 L777.5,317.2 L777.6,318.1 L777.8,319.0 L778.0,320.0 L778.4,320.9 L778.8,321.9 L779.2,322.8 L779.7,323.7 L780.3,324.6 L781.0,325.5 L781.7,326.3 L782.5,327.1 L783.4,327.9 L784.4,328.6 L785.4,329.3 L786.4,329.9 L787.6,330.5 L788.8,331.0 L790.0,331.4 L791.3,331.8 L792.6,332.0 L794.0,332.2 L795.4,332.3 L796.9,332.3 L798.4,332.2 L799.9,332.0 L801.4,331.7 L802.9,331.3 L804.4,330.8 L806.0,330.2 L807.5,329.5 L808.9,328.6 L810.4,327.7 L811.8,326.6 L813.2,325.4 L814.5,324.1 L815.7,322.7 L816.9,321.1 L818.0,319.5 L819.0,317.8 L819.9,315.9 L820.7,314.0 L821.4,312.0 L822.0,309.9 L822.4,307.7 L822.7,305.5 L822.9,303.2 L822.9,300.8 L822.7,298.4 L822.4,296.0 L821.9,293.6 L821.3,291.1 L820.5,288.6 L819.4,286.2 L818.3,283.7 L816.9,281.3 L815.3,279.0 L813.6,276.7 L811.6,274.5 L809.5,272.4 L807.2,270.4 L804.8,268.5 L802.1,266.7 L799.3,265.1 L796.4,263.6 L793.3,262.3 L790.0,261.2 L786.6,260.2 L783.1,259.5 L779.5,259.1 L775.7,258.8 L771.9,258.8 L768.1,259.0 L764.1,259.5 L760.2,260.3 L756.2,261.4 L752.2,262.7 L748.2,264.4 L744.3,266.3 L740.4,268.5 L736.6,271.0 L732.9,273.8 L729.3,277.0 L725.9,280.4 L722.6,284.1 L719.5,288.1 L716.7,292.4 L714.0,296.9 L711.7,301.7 L709.6,306.7 L707.8,312.0 L706.3,317.5 L705.1,323.2 L704.3,329.0 L703.9,335.1 L703.9,341.2 L704.3,347.5 L705.1,353.9 L706.4,360.3 L708.1,366.7 L710.3,373.2 L712.9,379.6 L716.0,386.0 L719.6,392.3 L723.7,398.4 L728.3,404.4 L733.3,410.2 L738.8,415.7 L744.8,421.0 L751.3,426.0 L758.2,430.6 L765.6,434.9 L773.3,438.8 L781.5,442.2 L790.0,445.1 L798.9,447.5 L808.1,449.3 L817.6,450.6 L827.3,451.3 L837.3,451.3 L847.4,450.7 L857.7,449.3 L868.1,447.3 L878.6,444.5 L889.0,441.0 L899.4,436.7 L909.7,431.7 L919.9,425.9 L929.8,419.3 L939.5,411.9 L948.8,403.7 L957.8,394.8 L966.4,385.1 L974.5,374.6 L982.0,363.4 L988.9,351.6 L995.1,339.0 L1000.6,325.8 L1005.3,312.0 L1009.2,297.6 L1012.2,282.7 L1014.3,267.4 L1015.4,251.6 L1015.4,235.5 L1014.4,219.1 L1012.2,202.4 L1008.9,185.6 L1004.4,168.7 L998.8,151.8 L991.8,135.0 L983.7,118.3 L974.3,101.9 L963.6,85.8 L951.6,70.1 L938.4,55.0 L923.9,40.4 L908.2,26.6 L891.3,13.5 L873.2,1.4 L854.0,-9.8 L833.7,-19.9 L812.3,-28.8 L790.0,-36.4 L766.8,-42.7 L742.7,-47.6 L717.8,-50.9 L692.3,-52.6 L666.2,-52.7 L639.6,-51.0 L612.7,-47.6 L585.5,-42.2 L558.2,-35.0 L530.8,-25.8 L503.6,-14.6 L476.6,-1.4 L450.0,13.9 L424.0,31.2 L398.7,50.5 L374.1,71.9 L350.6,95.3 L328.2,120.7 L307.1,148.1 L287.4,177.3 L269.4,208.4 L253.0,241.3 L238.6,275.9 L226.3,312.0 L216.1,349.6 L208.2,388.6 L202.8,428.8 L200.0,470.1 L199.9,512.3 L202.6,555.3 L208.2,598.9 L216.8,642.9 L228.6,687.1 L243.5,731.4 L261.6,775.4 L282.9,819.1 L307.6,862.1 L335.6,904.2 L366.9,945.2 L401.5,984.9 L439.4,1023.0 L480.5,1059.2 L524.8,1093.4 L572.1,1125.2 L622.4,1154.4 L675.6,1180.8 L731.5,1204.1 L790.0,1224.2"/>
+        <g transform="translate(758.0 292.0) scale(0.833)" class="ic"><g class="fl" style="animation-duration:6s;animation-delay:-1.4s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><g class="gr" style="animation-duration:20s"><path d="M39.9,22.1 L43.9,22.3 L43.9,25.7 L39.9,25.9 L38.7,30.3 L42.1,32.5 L40.4,35.4 L36.8,33.6 L33.6,36.8 L35.4,40.4 L32.5,42.1 L30.3,38.7 L25.9,39.9 L25.7,43.9 L22.3,43.9 L22.1,39.9 L17.7,38.7 L15.5,42.1 L12.6,40.4 L14.4,36.8 L11.2,33.6 L7.6,35.4 L5.9,32.5 L9.3,30.3 L8.1,25.9 L4.1,25.7 L4.1,22.3 L8.1,22.1 L9.3,17.7 L5.9,15.5 L7.6,12.6 L11.2,14.4 L14.4,11.2 L12.6,7.6 L15.5,5.9 L17.7,9.3 L22.1,8.1 L22.3,4.1 L25.7,4.1 L25.9,8.1 L30.3,9.3 L32.5,5.9 L35.4,7.6 L33.6,11.2 L36.8,14.4 L40.4,12.6 L42.1,15.5 L38.7,17.7Z"/><circle cx="24" cy="24" r="6"/></g></g></g>
+        <g transform="translate(802.9 281.3) scale(0.833)" class="ic"><g class="fl" style="animation-duration:7s;animation-delay:-2.1s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M6 44h22M14 44V6M22 44V6M6 6h38M44 6v14M44 20a3 3 0 1 1 0 6M14 14l8-8M14 22l8-8M14 30l8-8M14 38l8-8M6 6v8h8"/></g></g>
+        <g transform="translate(770.0 241.2) scale(0.833)" class="ic"><g class="fl" style="animation-duration:4s;animation-delay:-2.8s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><g transform="scale(2)"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></g></g></g>
+        <g transform="translate(715.1 252.1) scale(0.833)" class="ic"><g class="fl" style="animation-duration:5s;animation-delay:-3.5s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M10 14h24v22H10zM34 20h8v10h-8zM6 18v14M16 14v22M22 14v22M28 14v22M14 14v-4h16v4M14 36v4h16v-4"/></g></g>
+        <g transform="translate(687.8 292.0) scale(0.833)" class="ic"><g class="fl" style="animation-duration:6s;animation-delay:-4.2s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M27 3 9 27h13l-3 18 20-26H25z"/></g></g>
+        <g transform="translate(689.3 350.6) scale(0.833)" class="ic"><g class="fl" style="animation-duration:7s;animation-delay:-4.9s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M3 12h30v16H3zM33 17l12-5v16l-12-5M14 28v8M7 36h14"/><circle cx="14" cy="20" r="3"/></g></g>
+        <g transform="translate(732.1 406.4) scale(0.856)" class="ic"><g class="fl" style="animation-duration:4s;animation-delay:-0.6s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M20 12 28 4l16 16-8 8zM30 22 8 44M26 8l14 14"/></g></g>
+        <g transform="translate(810.4 426.4) scale(1.038)" class="ic"><g class="fl" style="animation-duration:5s;animation-delay:-1.3s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M3 10h42v10H3zM3 26h42v10H3zM10 36v9M38 36v9M10 20l8-10M22 20l8-10M34 20l8-10M10 36l8-10M22 36l8-10M34 36l8-10"/></g></g>
+        <g transform="translate(260.0 110.8) scale(1.792)" class="ic"><g class="fl" style="animation-duration:6s;animation-delay:-2.0s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><g class="gr" style="animation-duration:31s"><path d="M39.9,22.1 L43.9,22.3 L43.9,25.7 L39.9,25.9 L38.7,30.3 L42.1,32.5 L40.4,35.4 L36.8,33.6 L33.6,36.8 L35.4,40.4 L32.5,42.1 L30.3,38.7 L25.9,39.9 L25.7,43.9 L22.3,43.9 L22.1,39.9 L17.7,38.7 L15.5,42.1 L12.6,40.4 L14.4,36.8 L11.2,33.6 L7.6,35.4 L5.9,32.5 L9.3,30.3 L8.1,25.9 L4.1,25.7 L4.1,22.3 L8.1,22.1 L9.3,17.7 L5.9,15.5 L7.6,12.6 L11.2,14.4 L14.4,11.2 L12.6,7.6 L15.5,5.9 L17.7,9.3 L22.1,8.1 L22.3,4.1 L25.7,4.1 L25.9,8.1 L30.3,9.3 L32.5,5.9 L35.4,7.6 L33.6,11.2 L36.8,14.4 L40.4,12.6 L42.1,15.5 L38.7,17.7Z"/><circle cx="24" cy="24" r="6"/></g></g></g>
+        <g transform="translate(183.3 269.0) scale(1.792)" class="ic"><g class="fl" style="animation-duration:7s;animation-delay:-2.7s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M16 4v10M32 4v10M10 14h28v8a14 14 0 0 1-28 0zM24 36v10"/></g></g>
+        <g transform="translate(156.7 460.8) scale(1.792)" class="ic"><g class="fl" style="animation-duration:4s;animation-delay:-3.4s"><rect class="bk" x="-4" y="-4" width="56" height="56" rx="10"/><path d="M12 44 24 26M36 44 24 26M24 26 14 8l6-2 4 12 4-12 6 2z"/></g></g>
+      </svg>
+      <img class="big" src="images/img03.png" alt="Manblue Industries Mi logo">
+      <div class="chip c1" data-i="1"><svg class="i" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Power connected</span></div>
+      <div class="chip c2" data-i="2"><svg class="i" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span>Made to perform</span></div>
+      <div class="chip c3" data-i="3"><svg class="i" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span>Safety first</span></div>
+      <div class="stage-foot mono">
+        <div class="ctl">
+          <button type="button" id="prev" aria-label="Previous"><svg class="i" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+          <span id="count">01 / 04</span>
+          <button type="button" id="next" aria-label="Next"><svg class="i" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+        <span id="cap" aria-live="polite">Integrated engineering</span>
       </div>
     </div>
   </div>
-</section>
 
-<section id="what-we-do" style="padding-top:clamp(40px,6vw,64px)">
-  <div class="wrap">
-    <div class="about">
-      <div>
-        <div class="mono a-tag">Our work</div>
-        <h2>What we do</h2>
-        <p class="a-lead">We install, commission, manufacture and maintain the critical systems of industrial, commercial and residential spaces, from machinery and overhead cranes to electrical networks, control panels and plumbing, delivered to your drawings and tested before handover.</p>
+  <section id="about" style="padding-top:clamp(32px,5vw,56px)">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <div class="mono a-tag">Who we are</div>
+          <h2>About us</h2>
+          <p class="a-lead">Manblue Industries is an integrated mechanical, electrical and plumbing (MEP) engineering company based in Krishnagiri district, Tamil Nadu. Under the leadership of Managing Director R T Raj Varshan, B.E, we were built on one conviction: industrial facilities perform best when a single, accountable team looks after the systems that keep them running.</p>
+          <p><b>Our origin.</b> Our roots are in the industrial community of Krishnagiri, and our work grew from the practical needs of the plants around us: dependable installation, responsive repair and skilled fabrication, available from one team. Being local means we understand the sites we serve, and we are close enough to respond when it matters.</p>
+        </div>
+        <div class="a-side">
+          <dl class="facts">
+            <div><dt>Managing Director</dt><dd>R T Raj Varshan, B.E</dd></div>
+            <div><dt>Headquarters</dt><dd>Krishnagiri, Tamil Nadu</dd></div>
+            <div><dt>Disciplines</dt><dd>Mechanical, Electrical, Plumbing</dd></div>
+            <div><dt>Clients</dt><dd>Industrial, Commercial, Residential</dd></div>
+            <div><dt>GST number</dt><dd>33EHQPR6059M1ZF</dd></div>
+          </dl>
+        </div>
       </div>
-      <ul class="a-pillars">
-        <li><span class="mono">01</span><div><h3>Service</h3><p>Installation and commissioning of machinery, cranes, electrical and plumbing systems, delivered on time and tested before handover.</p></div></li>
-        <li><span class="mono">02</span><div><h3>Manufacturing</h3><p>Cranes, structural steel, roofing sheds and custom frames manufactured, fabricated and welded to your drawings.</p></div></li>
-        <li><span class="mono">03</span><div><h3>Maintenance</h3><p>Planned and responsive upkeep, from motors and hydraulics to panels and piping, that limits downtime and keeps your plant running.</p></div></li>
-      </ul>
+    </div>
+  </section>
+
+  <section id="what-we-do" style="padding-top:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <div class="mono a-tag">Our work</div>
+          <h2>What we do</h2>
+          <p class="a-lead">We install, commission, manufacture and maintain the critical systems of industrial, commercial and residential spaces, from machinery and overhead cranes to electrical networks, control panels and plumbing, delivered to your drawings and tested before handover.</p>
+        </div>
+        <ul class="a-pillars">
+          <li><span class="mono">01</span><div><h3>Service</h3><p>Installation and commissioning of machinery, cranes, electrical and plumbing systems, delivered on time and tested before handover.</p></div></li>
+          <li><span class="mono">02</span><div><h3>Manufacturing</h3><p>Cranes, structural steel, roofing sheds and custom frames manufactured, fabricated and welded to your drawings.</p></div></li>
+          <li><span class="mono">03</span><div><h3>Maintenance</h3><p>Planned and responsive upkeep, from motors and hydraulics to panels and piping, that limits downtime and keeps your plant running.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="capabilities" style="padding-top:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>One partner.<br>Every critical system.</h2>
+        <p>Explore a complete range of technical services, delivered with the precision your facility deserves.</p>
+      </div>
+      <div class="tabs" id="tabs" role="group" aria-label="Filter services"></div>
+      <div class="subtabs" id="subtabs" role="group" aria-label="Mechanical sub-division" hidden></div>
+      <div id="groups"></div>
+    </div>
+  </section>
+
+
+  <section id="approach" class="approach" style="padding-block:0">
+    <div class="wrap">
+      <div class="ap-grid">
+        <div>
+          <div class="mono ap-k">/ The Manblue approach</div>
+          <h2>Technical depth.<br><span>Human clarity.</span></h2>
+          <p class="ap-lead">Good engineering should make complex things feel simple. We bring technical rigour, honest communication and a sharp eye for detail to every project.</p>
+          <a class="ap-btn" href="#contact">Work with us <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+        <ol class="ap-list">
+          <li><span class="mono">01</span><div><h3>Understand first</h3><p>We listen to the real operational need before recommending the right solution.</p></div></li>
+          <li><span class="mono">02</span><div><h3>Execute precisely</h3><p>Our teams coordinate every detail from planning through commissioning.</p></div></li>
+          <li><span class="mono">03</span><div><h3>Stay accountable</h3><p>We build relationships that continue long after the installation is complete.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Portfolio &amp;<br>testimonials</h2>
+        
+      </div>
+      <div class="drive">
+        <div>
+          <h3 class="pf-h" style="margin:0 0 10px">Photos &amp; videos</h3>
+          <p>Browse our products and project photos and videos in our shared Google Drive folder.</p>
+          <a class="btn-ink" href="https://drive.google.com/drive/folders/1K0WqfuzQz9TcFAwj4k9boc57RxepkiR0" target="_blank" rel="noopener">Open Google Drive <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+        <iframe title="Manblue Industries products on Google Drive" src="https://drive.google.com/embeddedfolderview?id=1K0WqfuzQz9TcFAwj4k9boc57RxepkiR0#grid" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Careers</h2>
+        <p>Join a team that installs, repairs and builds the systems industry runs on. We welcome skilled people who care about careful work.</p>
+      </div>
+      <div class="roles"><span>Project Manager</span><span>Project Engineer</span><span>Site Engineer</span><span>Purchase Engineer</span><span>Mechanical Technician</span><span>Electrical Engineer</span><span>Electrician</span><span>Plumber</span><span>Welder</span><span>Fitter</span></div>
+      <a class="btn-ink" style="margin-top:32px" href="mailto:manblueindustries@gmail.com?subject=Career%20enquiry">Send your details <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<section id="contact" class="rq">
+  <div class="wrap rq-grid">
+    <div>
+      <div class="mono rq-k">/ Request a quote</div>
+      <h2>Have a project<br>in mind?</h2>
+      <p class="rq-lead">Tell us what you are building, maintaining or improving. Our team is ready to help you move forward.</p>
+    </div>
+    <div class="rq-list">
+      <a class="rq-item" href="https://wa.me/918870339838" target="_blank" rel="noopener"><span class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span><span><small class="mono">WhatsApp</small><b>+91 88703 39838</b></span><svg class="i arr" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="rq-item" href="tel:+918870339838"><span class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small class="mono">Call</small><b>+91 88703 39838</b></span><svg class="i arr" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="rq-item" href="mailto:manblueindustries@gmail.com"><span class="ico"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg></span><span><small class="mono">Email</small><b>manblueindustries@gmail.com</b></span><svg class="i arr" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <p class="rq-addr"><svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bargur Main Road, Jagadevi Vill &amp; Post,<br>Krishnagiri dt, Tamil Nadu 635 203</span></p>
     </div>
   </div>
+  <div class="wrap rq-foot">
+    <div class="brand">
+      <img class="mark" src="images/img04.png" alt="" width="48" height="48">
+      <img class="word" src="images/img05.png" alt="Manblue Industries" width="159" height="32">
+    </div>
+    <p>© 2026 Manblue Industries. Build for what’s next.</p>
+  </div>
 </section>
+
+<script>
+(function () {
+  var IC = {
+    factory: '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/>',
+    wrench: '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
+    cog: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+    therm: '<path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>',
+    gauge: '<path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/>',
+    wind: '<path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>',
+    crane: '<path d="M3 21h18M7 21V8M7 8h13M20 8v5"/><path d="M18 13h4v3h-4z"/><path d="M7 8 3 12"/>',
+    hook: '<path d="M12 2v6"/><path d="M12 8a4 4 0 1 1-4 4"/><path d="M5 2h14"/>',
+    rail: '<path d="M3 5h18M7 5v6M17 5v6"/><path d="M5 11h4v3H5zM15 11h4v3h-4z"/>',
+    bolt: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+    panel: '<path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18"/>',
+    cpu: '<rect x="5" y="5" width="14" height="14"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
+    search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+    drop: '<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>',
+    waves: '<path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>',
+    tank: '<path d="M5 6c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3z"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/>',
+    pipe: '<path d="M3 7h9v10h9"/><path d="M3 4v6M21 14v6"/>',
+    beam: '<path d="M5 4h14M5 20h14M12 4v16"/>',
+    roof: '<path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/>',
+    flame: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
+    ruler: '<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m7.5 10.5 2 2M10.5 7.5l2 2M13.5 4.5l2 2M4.5 13.5l2 2"/>',
+    cam: '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
+    link: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>',
+    fence: '<path d="M4 4v16M12 4v16M20 4v16M4 8h16M4 16h16"/>',
+    bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>'
+  };
+  function icon(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + IC[n] + '</svg>'; }
+
+  var DIV = { mech: 'Mechanical', elec: 'Electrical', plum: 'Plumbing' };
+  var SUBS = [['mach', 'Machinery & Systems'], ['crane', 'Crane Systems'], ['fab', 'Fabrication & Welding'], ['safe', 'Safety & Security Systems']];
+  var SUBNAME = {}; SUBS.forEach(function (s) { SUBNAME[s[0]] = s[1]; });
+  /* [division, sub-division, icon, title, description] */
+  var PHOTOS = {"Machinery Installation & Commissioning": "images/img06.jpg", "Machinery Repair & Maintenance": "images/img07.jpg", "Motor Repair & Maintenance": "images/img08.jpg", "HVAC": "images/img09.jpg", "Hydraulic Systems": "images/img10.jpg", "Pneumatic Systems": "images/img11.jpg", "Structural Steel Fabrication": "images/img12.jpg", "Roofing Shed Fabrication": "images/img13.jpg", "Customized Fabrication": "images/img14.jpg", "All Fabrication and Welding Works": "images/img15.jpg", "CCTV": "images/img16.jpg", "Safety Lifeline": "images/img17.jpg", "Fire Alarm": "images/img18.jpg", "Guardrails & Barricades": "images/img19.jpg", "EOT Cranes": "images/img20.jpg", "Jib Cranes": "images/img21.jpg", "Hoist": "images/img22.jpg", "KBK Systems": "images/img23.jpg", "All Electrical Installation Works": "images/img24.jpg", "Water Supply Piping": "images/img25.jpg", "Overhead Tank Installation": "images/img26.jpg", "Sanitary Fittings & Installation": "images/img27.jpg", "Drainage & Wastewater Piping": "images/img28.jpg", "All Plumbing Works": "images/img29.jpg", "Control Panels & Automation": "images/img30.jpg", "Troubleshooting & Maintenance": "images/img31.jpg", "Panel Boards": "images/img32.jpg"};
+  var S = [
+    ['mech','mach','factory','Machinery Installation & Commissioning','From placement to performance, we bring new machinery online with precision.'],
+    ['mech','mach','wrench','Machinery Repair & Maintenance','Planned and responsive care that keeps production moving.'],
+    ['mech','mach','cog','Motor Repair & Maintenance','Testing, repair and servicing that keeps drives running at rated output.'],
+    ['mech','mach','therm','HVAC','Ventilation and cooling systems installed and serviced for controlled plant environments.'],
+    ['mech','mach','gauge','Hydraulic Systems','Power units, cylinders and circuits installed, repaired and tuned for steady pressure.'],
+    ['mech','mach','wind','Pneumatic Systems','Compressed-air lines, valves and actuators set up for reliable, leak-free operation.'],
+    ['mech','crane','crane','EOT Cranes','Electric overhead travelling cranes installed, load-tested and maintained for safe lifting.'],
+    ['mech','crane','hook','Hoist','Hoists fitted, inspected and serviced for dependable day-to-day material handling.'],
+    ['mech','crane','crane','Jib Cranes','Jib cranes that bring lifting capacity right to the workstation.'],
+    ['mech','crane','rail','KBK Systems','Modular KBK rail systems for flexible, light-load handling across the shop floor.'],
+    ['mech','fab','beam','Structural Steel Fabrication','Structural steelwork fabricated and fitted to your drawings.'],
+    ['mech','fab','roof','Roofing Shed Fabrication','Roofing sheds fabricated and erected for production and storage areas.'],
+    ['mech','fab','ruler','Customized Fabrication','Made-to-measure fabrication for the parts and frames your site needs.'],
+    ['mech','fab','flame','All Fabrication and Welding Works','Welding and fabrication for every requirement, handled by one crew.'],
+    ['mech','safe','cam','CCTV','Camera systems installed to keep watch over your plant and premises.'],
+    ['mech','safe','link','Safety Lifeline','Lifeline systems for safe work at height.'],
+    ['mech','safe','fence','Guardrails & Barricades','Guardrails and barricades that keep people and machinery apart.'],
+    ['mech','safe','bell','Fire Alarm','Fire alarm systems installed and tested for early warning.'],
+    ['elec',null,'bolt','All Electrical Installation Works','Complete wiring, lighting and power distribution, installed to your site requirements.'],
+    ['elec',null,'panel','Panel Boards','Distribution and power panels assembled and installed for safe, organised supply.'],
+    ['elec',null,'cpu','Control Panels & Automation','Control logic and automation that coordinate your machines and processes.'],
+    ['elec',null,'search','Troubleshooting & Maintenance','Fast fault-finding and scheduled upkeep that limits downtime.'],
+    ['plum',null,'drop','Water Supply Piping','Supply lines laid out and fitted for steady flow across the facility.'],
+    ['plum',null,'waves','Drainage & Wastewater Piping','Drain and wastewater networks installed with correct falls and clean joints.'],
+    ['plum',null,'pipe','Sanitary Fittings & Installation','Fixtures and fittings installed neatly and tested before handover.'],
+    ['plum',null,'tank','Overhead Tank Installation','Tank placement, supports and connections installed for dependable storage.'],
+    ['plum',null,'wrench','All Plumbing Works','One team for every plumbing requirement, from new work to repair.']
+  ];
+  var TABS = [['all', 'All'], ['mech', 'Mechanical'], ['elec', 'Electrical'], ['plum', 'Plumbing']];
+  var cur = 'mech', sub = 'all';
+  var tabsEl = document.getElementById('tabs'), subEl = document.getElementById('subtabs'), groupsEl = document.getElementById('groups');
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function two(n) { return (n < 10 ? '0' : '') + n; }
+
+  function renderTabs() {
+    tabsEl.innerHTML = TABS.map(function (t) {
+      return '<button type="button" class="tab" data-k="' + t[0] + '" aria-pressed="' + (t[0] === cur) + '">' + t[1] + '</button>';
+    }).join('');
+    subEl.hidden = cur !== 'mech';
+    if (cur === 'mech') {
+      subEl.innerHTML = '<span class="lbl mono">Mechanical sub-divisions</span>' + [['all', 'All mechanical']].concat(SUBS).map(function (s) {
+        return '<button type="button" class="sub" data-s="' + s[0] + '" aria-pressed="' + (s[0] === sub) + '">' + esc(s[1]) + '</button>';
+      }).join('');
+    }
+  }
+  function card(s, n) {
+    var kind = s[1] ? SUBNAME[s[1]] : 'Core MEP';
+    var p = PHOTOS[s[3]];
+    var media = p ? '<img class="ph" loading="lazy" decoding="async" src="' + p + '" alt="' + esc(s[3]) + ' by Manblue Industries"><span class="n">' + two(n) + '</span>'
+      : '<span class="rg r3"></span><span class="rg r2"></span><span class="rg r1"></span><span class="n">' + two(n) + '</span><div class="in">' + icon(s[2]) + '<span class="mono">MANBLUE / ' + DIV[s[0]].toUpperCase() + '</span></div>';
+    return '<article class="svc"><div class="svc-img' + (p ? ' has-ph' : '') + '">' + media + '</div>' +
+      '<div class="svc-kind mono">' + esc(kind) + '</div><h4>' + esc(s[3]) + '</h4><p>' + esc(s[4]) + '</p></article>';
+  }
+  function renderGroups() {
+    var out = '', n = 0;
+    if (cur === 'mech') {
+      SUBS.forEach(function (sd) {
+        if (sub !== 'all' && sub !== sd[0]) return;
+        var list = S.filter(function (s) { return s[0] === 'mech' && s[1] === sd[0]; });
+        out += '<div class="group-head"><h3>' + esc(sd[1]) + '</h3><span class="mono">' + list.length + ' services</span></div><div class="grid">' +
+          list.map(function (s) { n++; return card(s, n); }).join('') + '</div>';
+      });
+    } else {
+      var items = S.filter(function (s) { return cur === 'all' || s[0] === cur; });
+      out = '<div class="grid" style="margin-top:28px">' + items.map(function (s) { n++; return card(s, n); }).join('') + '</div>';
+    }
+    groupsEl.innerHTML = out;
+  }
+  function update() { renderTabs(); renderGroups(); }
+  tabsEl.addEventListener('click', function (e) { var b = e.target.closest('.tab'); if (!b) return; cur = b.getAttribute('data-k'); sub = 'all'; update(); });
+  subEl.addEventListener('click', function (e) { var b = e.target.closest('.sub'); if (!b) return; sub = b.getAttribute('data-s'); update(); });
+  document.querySelectorAll('[data-go]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault(); cur = a.getAttribute('data-go'); sub = 'all'; update();
+      document.getElementById('capabilities').scrollIntoView();
+    });
+  });
+  update();
+
+  /* stage carousel */
+  var CAPS = ['Integrated engineering', 'Mechanical systems', 'Electrical systems', 'Plumbing systems'];
+  var idx = 0, chips = document.querySelectorAll('.chip'), timer;
+  function show(i) {
+    idx = (i + CAPS.length) % CAPS.length;
+    document.getElementById('count').textContent = '0' + (idx + 1) + ' / 0' + CAPS.length;
+    document.getElementById('cap').textContent = CAPS[idx];
+    chips.forEach(function (c) { c.classList.toggle('on', Number(c.getAttribute('data-i')) === idx); });
+  }
+  function restart() {
+    clearInterval(timer);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(function () { show(idx + 1); }, 5000);
+  }
+  document.getElementById('prev').addEventListener('click', function () { show(idx - 1); restart(); });
+  document.getElementById('next').addEventListener('click', function () { show(idx + 1); restart(); });
+  show(0); restart();
+})();
+</script>
+
+</body></html>
